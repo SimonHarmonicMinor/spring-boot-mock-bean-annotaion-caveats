@@ -2,13 +2,15 @@ package com.example.demo;
 
 import com.example.demo.enrich.EnrichmentService;
 import com.example.demo.queue.QueueService;
+import org.springframework.stereotype.Service;
 
-public class FacadeService {
+@Service
+public class MessageService {
 
   private final QueueService queueService;
   private final EnrichmentService enrichmentService;
 
-  public FacadeService(
+  public MessageService(
       QueueService queueService,
       EnrichmentService enrichmentService
   ) {

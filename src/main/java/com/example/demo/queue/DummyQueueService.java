@@ -1,8 +1,9 @@
 package com.example.demo.queue;
 
-import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class DummyQueueService implements QueueService {
 
   @Override
